@@ -1,0 +1,10 @@
+.skill-section {
+  max-width: inherit;
+}
+
+.custom-skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 40rem;
+}

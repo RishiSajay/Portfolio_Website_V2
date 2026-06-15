@@ -1,0 +1,143 @@
+.skill-container {
+  width: fit-content;
+  max-height: 150px;
+}
+
+#banner {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background: #091B43;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+#banner .fill {
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.2, .6, .8, .4);
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: fillAction;
+}
+
+#banner .fill.Beginner {
+  animation-name: fillActionBeginner;
+}
+
+
+#banner .fill.Intermediate {
+  animation-name: fillActionIntermediate;
+}
+
+#banner .fill.Advanced {
+  animation-name: fillActionAdvanced;
+}
+
+#banner .fill.Expert {
+  animation-name: fillActionExpert;
+}
+
+
+
+#banner #waveShape {
+  animation-name: waveAction;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  width:300px;
+  height: 150px;
+  fill: #04ACFF;
+}
+
+#banner .c1 #waveShape  {
+  fill: #04FFF2;
+}
+
+#banner .c2 #waveShape  {
+  fill: #04E3FF;
+}
+
+#banner .c3 #waveShape  {
+  fill: #04ACFF;
+}
+
+#banner .c4 #waveShape  {
+  fill: #046AFF;
+}
+
+@keyframes fillAction {
+  0% {
+      transform: translate(0, 70px);
+  }
+  50% {
+    transform: translate(0, 90px);
+  }
+  100% {
+    transform: translate(0, 70px);
+  }
+}
+
+/* @keyframes fillActionBeginner {
+  0% {
+      transform: translate(0, 100px);
+  }
+  100% {
+    transform: translate(0, 100px);
+  }
+}
+@keyframes fillActionIntermediate {
+  0% {
+      transform: translate(0, 75px);
+  }
+  100% {
+    transform: translate(0, 75px);
+  }
+}
+@keyframes fillActionAdvanced {
+  0% {
+      transform: translate(0, 50px);
+  }
+  100% {
+    transform: translate(0, 50px);
+  }
+}
+@keyframes fillActionExpert {
+  0% {
+      transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, 25px);
+  }
+} */
+@keyframes waveAction {
+  0% {
+      transform: translate(-150px, 0);
+  }
+  100% {
+      transform: translate(0, 0);
+  }
+}
+
+.skill-name {
+  color: #E3F1FF;
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+}
+
+.skill-name.fs-5 {
+  top: -78.5px;
+
+}
+
+.skill-name.fs-6 {
+  top: -76px;
+}
+
+.skill-level {
+  color: #7B8998;
+  width: fit-content;
+  position: relative;
+  top: -30px;
+  margin: 0 auto;
+}

@@ -1,0 +1,11 @@
+.navbar-custom {
+  display: flex;
+  flex-direction: column;
+  width: 30rem !important;
+}
+
+@media only screen and (max-width: 1200px){
+  .navbar-custom {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+.divider {
+  max-width: inherit;
+  height: 1.9rem;
+  border-color: #969DA5 !important;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  text-align: center;
+  color: #969DA5;
+}

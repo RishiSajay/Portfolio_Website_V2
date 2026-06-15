@@ -1,0 +1,13 @@
+
+.social {
+  color: var(--home-section-color);
+  width: fit-content;
+  text-align:start;
+  justify-content: start;
+  align-items:start;
+  z-index: 2;
+}
+
+.social:hover {
+  color: var(--home-section-hover-color);
+}

@@ -1,0 +1,18 @@
+:root {
+  --name-color: #C0C2C6;
+}
+
+.home-section {
+ padding-top: 5rem;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 4rem;
+  color: var(--name-color);
+  /* text-shadow:1px 1px 100px #9CA9C3, 1px 1px 1px #9CA9C3; */
+}
+
+.name-subtitle {
+  color: #626771;
+}

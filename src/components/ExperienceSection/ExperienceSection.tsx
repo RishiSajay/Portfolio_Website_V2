@@ -1,5 +1,4 @@
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard";
-import LinkText from "../LinkText/LinkText";
 import CardLinkText from "../CardLinkText/CardLinkText";
 import "./ExperienceSection.css";
 

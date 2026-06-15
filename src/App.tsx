@@ -6,7 +6,7 @@ import AboutMeSection from "./components/AboutMeSection/AboutMeSection";
 import Divider from "./components/Divider/Divider";
 import CreditSection from "./components/CreditSection/CreditSection";
 import AnimatedCursor from "./components/AnimatedCursor/AnimatedCursor";
-import SkillSection from "./components/SkillSection/SkillSection";
+// import SkillSection from "./components/SkillSection/SkillSection";
 
 const App = () => {
   return (

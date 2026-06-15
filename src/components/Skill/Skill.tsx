@@ -6,16 +6,6 @@ interface Props {
 }
 
 const Skill = ({ name, level }: Props) => {
-  var text = "";
-  if (level == "Expert") {
-    text = "Really good";
-  } else if (level == "Advanced") {
-    text = "Pretty good";
-  } else if (level == "Intermediate") {
-    text = "Good";
-  } else {
-    text = "Good (beginner) :)";
-  }
   return (
     <>
       <div className="skill-container mx-3 mb-4">

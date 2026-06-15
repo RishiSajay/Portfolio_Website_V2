@@ -1,5 +1,4 @@
 import Navbar from "../Navbar/Navbar";
-import Skill from "../Skill/Skill";
 import Socials from "../Socials/Socials";
 import "./HomeSection.css";
 

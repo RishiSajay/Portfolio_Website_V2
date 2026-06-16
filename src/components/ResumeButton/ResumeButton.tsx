@@ -5,7 +5,7 @@ const ResumeButton = () => {
     <>
       <button className="resume-button">
         <a
-          href="/src/assets/files/Resume.pdf"
+          href="/assets/files/Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

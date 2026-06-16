@@ -65,7 +65,7 @@ const ProjectSection = () => {
           link1Name="Github"
           link1="https://github.com/RishiSajay/Pulsar"
           link2Name="Play Game"
-          link2={homeUrl + "/src/assets/Pulsar/index.html"}
+          link2={"/assets/Pulsar/index.html"}
           builtWith={["Unity", "C#"]}
         >
           Developed a local PvP 2D space fighter game inspired by Tank Trouble.
@@ -90,7 +90,7 @@ const ProjectSection = () => {
           link1Name="Github"
           link1="https://github.com/RishiSajay/WeatherWebsite"
           link2Name="Go to Site"
-          link2={homeUrl + "/src/assets/WeatherApp/weather.html"}
+          link2={"/assets/WeatherApp/weather.html"}
           builtWith={["HTML", "JavaScript", "CSS", "Open Weather Map API"]}
         >
           Created a website that provides real time weather information based on

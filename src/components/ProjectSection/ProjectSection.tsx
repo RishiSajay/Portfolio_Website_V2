@@ -2,7 +2,6 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./ProjectSection.css";
 
 const ProjectSection = () => {
-  const homeUrl = "http://localhost:5173";
   return (
     <>
       <div className="project-section mt-5" id="projects">

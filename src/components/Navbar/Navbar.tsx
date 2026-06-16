@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavElement from "../NavElement/NavElement";
 import "./Navbar.css";
 
@@ -139,8 +139,8 @@ const Navbar = () => {
   //   ],
   // ]);
 
-  const [activeIndex] = useState(0);
-  // const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   // const changeColorScheme = (index: any) => {
   //   let colorScheme = colorMap.get(1); // Force map entry 1, changing color is broken
@@ -151,43 +151,43 @@ const Navbar = () => {
   //   }
   // };
 
-  // const handleScrollEvent = () => {
-  //   const position = window.scrollY;
+  const handleScrollEvent = () => {
+    const position = window.scrollY;
 
-  //   const about = document.getElementById("about");
-  //   const experience = document.getElementById("experience");
-  //   // const skills = document.getElementById("skills");
-  //   const projects = document.getElementById("projects");
+    const about = document.getElementById("about");
+    const experience = document.getElementById("experience");
+    // const skills = document.getElementById("skills");
+    // const projects = document.getElementById("projects");
 
-  //   if (about && position < about.getBoundingClientRect().bottom) {
-  //     setActiveIndex(0);
-  //     changeColorScheme(0);
-  //   } else if (
-  //     experience &&
-  //     position < experience.getBoundingClientRect().bottom + 600
-  //   ) {
-  //     setActiveIndex(1);
-  //     changeColorScheme(1);
-  //   }
-  //   // else if (
-  //   //   skills &&
-  //   //   position < skills.getBoundingClientRect().bottom + 1500
-  //   // ) {
-  //   //   setActiveIndex(2);
-  //   // }
-  //   else {
-  //     setActiveIndex(2);
-  //     changeColorScheme(2);
-  //   }
-  // };
+    if (about && position < about.getBoundingClientRect().bottom) {
+      setActiveIndex(0);
+      // changeColorScheme(0);
+    } else if (
+      experience &&
+      position < experience.getBoundingClientRect().bottom + 600
+    ) {
+      setActiveIndex(1);
+      // changeColorScheme(1);
+    }
+    // else if (
+    //   skills &&
+    //   position < skills.getBoundingClientRect().bottom + 1500
+    // ) {
+    //   setActiveIndex(2);
+    // }
+    else {
+      setActiveIndex(2);
+      // changeColorScheme(2);
+    }
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScrollEvent, { passive: true });
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollEvent, { passive: true });
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScrollEvent);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScrollEvent);
+    };
+  }, []);
 
   return (
     <>
